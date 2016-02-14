@@ -1,3 +1,7 @@
+## Resubmission
+This is a resubmission. In this version we have:
+* Extended the DESCRIPTION providing more information about OpenSesame.
+
 ## Test environments
 * local Windows 7 install, R 3.2.3
 * local Mac OS X install, R 3.2.3
