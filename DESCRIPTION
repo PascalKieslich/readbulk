@@ -2,7 +2,7 @@ Package: readbulk
 Type: Package
 Version: 1.0.0
 Date: 2016-02-13
-Title: Read and combine multiple data files
+Title: Read and Combine Multiple Data Files
 Description: Combine multiple data files from a common directory.
     The data files will be read into R and bound together, creating a
     single large data.frame. A general function is provided along with
