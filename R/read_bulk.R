@@ -4,7 +4,7 @@
 #' \link{data.frame}.
 #'
 #' \code{read_bulk} provides a wrapper around a specific data import function
-#' (\link{read.csv} by default) to load the individual data files. After
+#' (\link[utils]{read.csv} by default) to load the individual data files. After
 #' loading, the different data files are merged using \link[plyr]{rbind.fill}.
 #' This function can deal with varying column names across files, and still
 #' places data into the appropriate columns. If a column is not present in a
@@ -24,7 +24,7 @@
 #' @param data A \code{data.frame} to which the new data will be added. This is
 #'   optional, and an empty \code{data.frame} is used if none is provided.
 #' @param fun the function used for reading the individual files. By default,
-#'   this is \link{read.csv}. Can be any data import function as long as it
+#'   this is \link[utils]{read.csv}. Can be any data import function as long as it
 #'   takes the file name as first argument.
 #' @param ... additional arguments passed on to \code{fun}.
 #'
@@ -71,7 +71,7 @@ read_bulk <- function(directory=".",
   subdirectories=FALSE,
   extension=NULL,
   data=NULL,
-  fun=read.csv,
+  fun=utils::read.csv,
   ...) {
 
   # Change warning options so that instant warning message is returned

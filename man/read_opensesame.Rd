@@ -54,7 +54,7 @@ is not present in a specific file, it will be filled with \code{NA}.
 \examples{
 \dontrun{
 # Read single raw data file from OpenSesame
-raw_data <- read.csv("subject-1.csv",encoding = "UTF-8")
+raw_data <- utils::read.csv("raw_data/subject-1.csv",encoding = "UTF-8")
 
 # Merge all files in the main folder "raw_data"
 # (which is in the current working directory)

@@ -5,7 +5,7 @@
 \title{Read and combine multiple data files.}
 \usage{
 read_bulk(directory = ".", subdirectories = FALSE, extension = NULL,
-  data = NULL, fun = read.csv, ...)
+  data = NULL, fun = utils::read.csv, ...)
 }
 \arguments{
 \item{directory}{a character string. Name of the folder where the raw data
@@ -26,7 +26,7 @@ ending with the specified extension will be merged.}
 optional, and an empty \code{data.frame} is used if none is provided.}
 
 \item{fun}{the function used for reading the individual files. By default,
-this is \link{read.csv}. Can be any data import function as long as it
+this is \link[utils]{read.csv}. Can be any data import function as long as it
 takes the file name as first argument.}
 
 \item{...}{additional arguments passed on to \code{fun}.}
@@ -44,7 +44,7 @@ Read and combine multiple data files. The files will be merged into one
 }
 \details{
 \code{read_bulk} provides a wrapper around a specific data import function
-(\link{read.csv} by default) to load the individual data files. After
+(\link[utils]{read.csv} by default) to load the individual data files. After
 loading, the different data files are merged using \link[plyr]{rbind.fill}.
 This function can deal with varying column names across files, and still
 places data into the appropriate columns. If a column is not present in a

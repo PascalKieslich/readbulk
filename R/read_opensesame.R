@@ -35,7 +35,7 @@
 #' @examples
 #' \dontrun{
 #' # Read single raw data file from OpenSesame
-#' raw_data <- read.csv("subject-1.csv",encoding = "UTF-8")
+#' raw_data <- utils::read.csv("raw_data/subject-1.csv",encoding = "UTF-8")
 #'
 #' # Merge all files in the main folder "raw_data"
 #' # (which is in the current working directory)
@@ -70,7 +70,7 @@ read_opensesame <- function(directory=".",
     subdirectories=subdirectories,
     extension=extension,
     data=data,
-    fun=read.csv,
+    fun=utils::read.csv,
     sep=",", header=TRUE, dec=".",
     stringsAsFactors = FALSE,
     encoding="UTF-8"
