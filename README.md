@@ -9,4 +9,4 @@ For (experimental) psychologists, the package provides the `read_opensesame` fun
 General Information
 -------------------
 
-The `readbulk` package was developed by Pascal Kieslich, with contributions by Felix Henninger. It is published under the [GNU General Public License (version 3)](LICENSE).
+The `readbulk` package was developed by Pascal Kieslich, with contributions by Felix Henninger. It is published under the GNU General Public License (version 3).
