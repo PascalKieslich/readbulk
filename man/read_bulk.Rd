@@ -70,7 +70,7 @@ raw_data <- read_bulk(directory = "raw_data",
 raw_data <- read_bulk(directory = "raw_data",
   subdirectories = c("Session1","Session2"))
 
-# Merge data tab separated data files and prevent
+# Merge tab separated data files and prevent
 # character vectors from being converted to factors
 raw_data <- read_bulk(directory = "raw_data",
   fun=read.delim,stringsAsFactor=FALSE)
