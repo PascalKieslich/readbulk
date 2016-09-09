@@ -5,7 +5,7 @@
 \title{Read and combine raw OpenSesame data.}
 \usage{
 read_opensesame(directory = ".", subdirectories = FALSE, extension = NULL,
-  data = NULL)
+  data = NULL, verbose = TRUE)
 }
 \arguments{
 \item{directory}{a character string. Name of the folder where the raw data
@@ -24,6 +24,9 @@ ending with the specified extension will be merged.}
 
 \item{data}{A \code{data.frame} to which the new data will be added. This is
 optional, and an empty \code{data.frame} is used if none is provided.}
+
+\item{verbose}{logical indicating whether function should report its
+progress.}
 }
 \value{
 A \link{data.frame} containing the merged raw data.

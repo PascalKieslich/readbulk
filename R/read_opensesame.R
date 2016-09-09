@@ -63,13 +63,15 @@
 read_opensesame <- function(directory=".",
   subdirectories=FALSE,
   extension=NULL,
-  data=NULL) {
+  data=NULL,
+  verbose=TRUE) {
 
   return(read_bulk(
     directory=directory,
     subdirectories=subdirectories,
     extension=extension,
     data=data,
+    verbose=verbose,
     fun=utils::read.csv,
     sep=",", header=TRUE, dec=".",
     stringsAsFactors = FALSE,

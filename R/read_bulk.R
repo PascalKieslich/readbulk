@@ -23,6 +23,8 @@
 #'   ending with the specified extension will be merged.
 #' @param data A \code{data.frame} to which the new data will be added. This is
 #'   optional, and an empty \code{data.frame} is used if none is provided.
+#' @param verbose logical indicating whether function should report its
+#'   progress.
 #' @param fun the function used for reading the individual files. By default,
 #'   this is \link[utils]{read.csv}. Can be any data import function as long as it
 #'   takes the file name as first argument.
@@ -71,6 +73,7 @@ read_bulk <- function(directory=".",
   subdirectories=FALSE,
   extension=NULL,
   data=NULL,
+  verbose=TRUE,
   fun=utils::read.csv,
   ...) {
 
@@ -109,7 +112,7 @@ read_bulk <- function(directory=".",
   # Read in data
   for (subdirectory in subdirectories) {
 
-    if (check_subdirectories) {
+    if (check_subdirectories & verbose) {
       message(paste("Start merging subdirectory:", subdirectory))
     }
 
@@ -122,7 +125,10 @@ read_bulk <- function(directory=".",
     }
 
     for (file in files) {
-      message(paste("Reading", file))
+
+      if (verbose){
+        message(paste("Reading", file))
+      }
 
       # Load individual file
       single_data <- fun(
