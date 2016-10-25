@@ -8,4 +8,5 @@
 There were no ERRORs, WARNINGs or NOTEs. 
 
 ## Downstream dependencies
-There are currently no downstream dependencies for this package.
+I have also run R CMD check on downstream dependencies (1 suggest).
+All packages that I could install passed.
