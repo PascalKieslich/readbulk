@@ -4,8 +4,9 @@ This is a resubmission. In this version we have:
 
 ## Test environments
 * local Windows 7 install, R 3.2.3
-* local Mac OS X install, R 3.2.3
-* debian testing (via rocker/r-devel docker package), R 2016-02-02 r70074
+* local Mac OS X install, R 3.3.1
+* debian testing (via rocker/r-devel docker package), R 3.3.1 (2016-06-21)
+* debian testing (via rocker/r-devel docker package), R 2016-10-17 r71531
 
 ## R CMD check results
 This is the first submission.
