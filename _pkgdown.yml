@@ -1,0 +1,7 @@
+reference:
+  - title: General function
+    contents:
+    - read_bulk
+  - title: OpenSesame specific function
+    contents:
+    - read_opensesame
