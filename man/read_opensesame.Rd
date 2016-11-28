@@ -2,7 +2,7 @@
 % Please edit documentation in R/read_opensesame.R
 \name{read_opensesame}
 \alias{read_opensesame}
-\title{Read and combine raw OpenSesame data.}
+\title{Read and combine raw OpenSesame data}
 \usage{
 read_opensesame(directory = ".", subdirectories = FALSE, extension = NULL,
   data = NULL, verbose = TRUE)

@@ -1,4 +1,4 @@
-#' Read and combine raw OpenSesame data.
+#' Read and combine raw OpenSesame data
 #'
 #' Read and combine multiple raw data files that were collected with OpenSesame
 #' (Mathot, Schreij, & Theeuwes, 2012). The files will be merged into one

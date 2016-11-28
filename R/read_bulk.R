@@ -1,4 +1,4 @@
-#' Read and combine multiple data files.
+#' Read and combine multiple data files
 #'
 #' Read and combine multiple data files. The files will be merged into one
 #' \link{data.frame}.

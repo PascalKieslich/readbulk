@@ -2,7 +2,7 @@
 % Please edit documentation in R/read_bulk.R
 \name{read_bulk}
 \alias{read_bulk}
-\title{Read and combine multiple data files.}
+\title{Read and combine multiple data files}
 \usage{
 read_bulk(directory = ".", subdirectories = FALSE, extension = NULL,
   data = NULL, verbose = TRUE, fun = utils::read.csv, ...)
