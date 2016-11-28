@@ -13,6 +13,8 @@ General Information
 
 The `readbulk` package was developed by Pascal Kieslich, with contributions by Felix Henninger. It is published under the GNU General Public License (version 3).
 
+An overview of the functions in this package can be found online at <http://pascalkieslich.github.io/readbulk/reference>. Please see [News](http://pascalkieslich.github.io/readbulk/news) for a summary of changes in the package.
+
 Installation
 ------------
 
