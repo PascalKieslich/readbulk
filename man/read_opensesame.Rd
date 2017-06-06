@@ -91,4 +91,3 @@ open-source, graphical experiment builder for the social sciences.
 \link{read_bulk} for reading and combining multiple data files
 that have other file formats.
 }
-

@@ -86,4 +86,3 @@ raw_data <- read_bulk(directory = "raw_data",
 
   \link{write.table} for data export.
 }
-
