@@ -41,6 +41,6 @@ The current stable version is available on CRAN and can be installed via `instal
 
 If you would like to cite the `readbulk` package in your published research, you can cite is as follows:
 
-Kieslich, & Henninger, F. (2016).
+Kieslich, P. J., & Henninger, F. (2016).
 Readbulk: An R package for reading and combining multiple data files.
 https://doi.org/10.5281/zenodo.596649

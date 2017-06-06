@@ -26,4 +26,4 @@ Citation
 
 If you would like to cite the `readbulk` package in your published research, you can cite is as follows:
 
-Kieslich, & Henninger, F. (2016). Readbulk: An R package for reading and combining multiple data files. <https://doi.org/10.5281/zenodo.596649>
+Kieslich, P. J., & Henninger, F. (2016). Readbulk: An R package for reading and combining multiple data files. <https://doi.org/10.5281/zenodo.596649>
