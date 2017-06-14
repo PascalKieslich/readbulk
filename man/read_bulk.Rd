@@ -76,7 +76,7 @@ raw_data <- read_bulk(directory = "raw_data",
 # Merge tab separated data files and prevent
 # character vectors from being converted to factors
 raw_data <- read_bulk(directory = "raw_data",
-  fun=read.delim,stringsAsFactor=FALSE)
+  fun=read.delim,stringsAsFactors=FALSE)
 }
 }
 \seealso{
