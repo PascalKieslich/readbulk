@@ -1,9 +1,11 @@
 #' Process lab.js data stored in survey software
 #'
-#' Process lab.js data stored in survey software.
+#' Process lab.js data stored in survey software by converting them from JSON
+#' data to a data.frame in long format.
 #'
-#' @param data a dataset.
-#' @param labjs_column column in \code{data} containing the lab.js data.
+#' @param data a data.frame.
+#' @param labjs_column a character string specifying the column in \code{data}
+#'   that contains the lab.js data.
 #' @param keep a character vector specifying which additional columns in
 #'   \code{data} should be kept.
 #' @param remove_no_json logical indicating whether rows with no JSON data
@@ -18,18 +20,18 @@
 #' @examples
 #' \dontrun{
 #' raw_data <- read.csv("raw_data.csv",encoding="UTF-8")
-#' 
+#'
 #' dataset <- process_labjs(data=raw_data,
 #'   labjs_column = "FB01_01",
 #'   keep=c("CASE","SERIAL"),
 #'   verbose=TRUE)
 #' }
-#' 
+#'
 #' @author
 #' Pascal J. Kieslich (\email{kieslich@@psychologie.uni-mannheim.de})
-#' 
+#'
 #' Felix Henninger (\email{mailbox@@felixhenninger.com})
-#' 
+#'
 #' @export
 process_labjs <- function(
   data,
@@ -38,15 +40,15 @@ process_labjs <- function(
   remove_no_json = FALSE,
   verbose=FALSE,
   ...) {
-  
+
   labjs_data <- as.character(data[,labjs_column])
-  
+
   complete_data <- data.frame()
-  
+
   exclude <- c('[object Object]')
-  
+
   for (i in 1:nrow(data)){
-    
+
     # CASE: no data
     if (is.na(labjs_data[i])){
       if (remove_no_json==FALSE & is.null(keep)==FALSE){
@@ -56,11 +58,11 @@ process_labjs <- function(
           message("Row ",i," in data did not contain any data.")
         }
       }
-    
-    
+
+
     } else{
       current_data <- jsonlite::fromJSON(labjs_data[i], flatten=TRUE, ...)
-      
+
       # CASE: no valid JSON data
       if(class(current_data)!="list") {
         if (remove_no_json==FALSE  & is.null(keep)==FALSE){
@@ -70,18 +72,18 @@ process_labjs <- function(
         if (verbose){
           message("Row ",i," in data did not contain valid JSON data.")
         }
-      
-      # CASE: valid JSON data  
+
+      # CASE: valid JSON data
       } else {
         current_data <- data.frame(current_data$data)
         current_data[,keep] <- data[i,keep]
         complete_data <- plyr::rbind.fill(complete_data,current_data)
       }
-      
+
     }
-    
+
   }
-  
+
   # Reorder columns
   if (is.null(keep)==FALSE){
     columns <- colnames(complete_data)
@@ -89,5 +91,5 @@ process_labjs <- function(
   }
 
   return(complete_data)
-  
+
 }

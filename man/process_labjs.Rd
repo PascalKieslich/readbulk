@@ -8,9 +8,10 @@ process_labjs(data, labjs_column, keep = NULL, remove_no_json = FALSE,
   verbose = FALSE, ...)
 }
 \arguments{
-\item{data}{a dataset.}
+\item{data}{a data.frame.}
 
-\item{labjs_column}{column in \code{data} containing the lab.js data.}
+\item{labjs_column}{a character string specifying the column in \code{data}
+that contains the lab.js data.}
 
 \item{keep}{a character vector specifying which additional columns in
 \code{data} should be kept.}
@@ -28,7 +29,8 @@ progress.}
 A \link{data.frame} containing the processed data.
 }
 \description{
-Process lab.js data stored in survey software.
+Process lab.js data stored in survey software by converting them from JSON
+data to a data.frame in long format.
 }
 \examples{
 \dontrun{
