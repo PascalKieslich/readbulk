@@ -130,11 +130,18 @@ read_bulk <- function(directory=".",
         ...
       )
 
-      # Add metadata
-      if(check_subdirectories) {
-        single_data$Subdirectory <- subdirectory
+      # Issue warning if read in data file has 0 rows
+      if (nrow(single_data)==0) {
+        warning("File ",file, " has 0 rows after reading it in.")
+
+      # Add metadata otherwise
+      } else {
+
+        if(check_subdirectories) {
+          single_data$Subdirectory <- subdirectory
+        }
+        single_data$File <- file
       }
-      single_data$File <- file
 
       return(single_data)
 
