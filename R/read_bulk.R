@@ -82,13 +82,6 @@ read_bulk <- function(directory=".",
   current_setting_warning <- options()$warn
   options(warn=1)
 
-  # Perform incremental merging, if previous data are provided
-  if (is.null(data) == FALSE) {
-    all_data <- data
-  } else {
-    all_data <- data.frame()
-  }
-
 
   # Set subdirectory variables according to the selected option
   if (class(subdirectories) == "logical") {
@@ -110,7 +103,8 @@ read_bulk <- function(directory=".",
   }
 
   # Read in data
-  for (subdirectory in subdirectories) {
+
+  all_data_list <- lapply(subdirectories, function(subdirectory){
 
     if (check_subdirectories & verbose) {
       message(paste("Start merging subdirectory:", subdirectory))
@@ -124,7 +118,7 @@ read_bulk <- function(directory=".",
       files <- grep(paste0(extension, "$"), files, value=TRUE)
     }
 
-    for (file in files) {
+    subdirectory_data_list <- lapply(files, function(file){
 
       if (verbose){
         message(paste("Reading", file))
@@ -142,10 +136,22 @@ read_bulk <- function(directory=".",
       }
       single_data$File <- file
 
-      # Bind individual file onto global data.frame
-      all_data <- plyr::rbind.fill(all_data, single_data)
-    }
+      return(single_data)
 
+    })
+
+    # Bind data together for subdirectory
+    return(do.call(plyr::rbind.fill, subdirectory_data_list))
+
+  })
+
+
+  # Bind all data together into global data.frame
+  all_data <- do.call(plyr::rbind.fill, all_data_list)
+
+  # Perform incremental merging, if previous data were provided
+  if (is.null(data) == FALSE) {
+    all_data <- plyr::rbind.fill(data, all_data)
   }
 
   # Reset warning option
