@@ -148,13 +148,13 @@ read_bulk <- function(directory=".",
     })
 
     # Bind data together for subdirectory
-    return(do.call(plyr::rbind.fill, subdirectory_data_list))
+    return(plyr::rbind.fill(subdirectory_data_list))
 
   })
 
 
   # Bind all data together into global data.frame
-  all_data <- do.call(plyr::rbind.fill, all_data_list)
+  all_data <- plyr::rbind.fill(all_data_list)
 
   # Perform incremental merging, if previous data were provided
   if (is.null(data) == FALSE) {
