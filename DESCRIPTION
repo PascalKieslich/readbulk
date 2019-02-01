@@ -1,7 +1,7 @@
 Package: readbulk
 Type: Package
-Version: 1.1.1
-Date: 2017-06-06
+Version: 1.1.2
+Date: 2019-02-02
 Title: Read and Combine Multiple Data Files
 Description: Combine multiple data files from a common directory.
     The data files will be read into R and bound together, creating a
@@ -11,9 +11,11 @@ Description: Combine multiple data files from a common directory.
 Maintainer: Pascal J. Kieslich <kieslich@psychologie.uni-mannheim.de>
 Authors@R: c(
     person(c("Pascal","J."), "Kieslich", role= c("aut", "cre"),
-            email= "kieslich@psychologie.uni-mannheim.de"),
+            email= "kieslich@psychologie.uni-mannheim.de",
+            comment = c(ORCID = "0000-0002-0853-9364")),
     person("Felix", "Henninger", role = "aut",
-            email= "mailbox@felixhenninger.com")
+        email= "mailbox@felixhenninger.com",
+        comment = c(ORCID = "0000-0002-7730-9511"))
     )
 URL: https://github.com/pascalkieslich/readbulk
 BugReports: https://github.com/pascalkieslich/readbulk/issues
@@ -24,5 +26,6 @@ Imports:
     utils,
     plyr,
     jsonlite
+Encoding: UTF-8
 LazyData: TRUE
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
