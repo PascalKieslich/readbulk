@@ -30,7 +30,7 @@ A \link{data.frame} containing the processed data.
 }
 \description{
 Process lab.js data stored in survey software by converting them from JSON
-data to a data.frame in long format.
+data to a data.frame in long format. This function is currently in beta mode.
 }
 \examples{
 \dontrun{
@@ -44,7 +44,7 @@ dataset <- process_labjs(data=raw_data,
 
 }
 \author{
-Pascal J. Kieslich (\email{kieslich@psychologie.uni-mannheim.de})
-
 Felix Henninger (\email{mailbox@felixhenninger.com})
+
+Pascal J. Kieslich (\email{kieslich@psychologie.uni-mannheim.de})
 }

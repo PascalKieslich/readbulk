@@ -1,7 +1,7 @@
 #' Process lab.js data stored in survey software
 #'
 #' Process lab.js data stored in survey software by converting them from JSON
-#' data to a data.frame in long format.
+#' data to a data.frame in long format. This function is currently in beta mode.
 #'
 #' @param data a data.frame.
 #' @param labjs_column a character string specifying the column in \code{data}
@@ -28,11 +28,10 @@
 #' }
 #'
 #' @author
-#' Pascal J. Kieslich (\email{kieslich@@psychologie.uni-mannheim.de})
-#'
 #' Felix Henninger (\email{mailbox@@felixhenninger.com})
 #'
-#' @export
+#' Pascal J. Kieslich (\email{kieslich@@psychologie.uni-mannheim.de})
+#'
 process_labjs <- function(
   data,
   labjs_column,
