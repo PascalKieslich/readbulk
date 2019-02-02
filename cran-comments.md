@@ -1,8 +1,6 @@
 ## Test environments
-* local Windows 7 install, R 3.3.1
-* local Mac OS X install, R 3.3.1
-* debian testing (via rocker/r-devel docker package), R 3.3.1 (2016-06-21)
-* debian testing (via rocker/r-devel docker package), R 2016-10-17 r71531
+* R 3.5.2 (stable) Windows 7
+* R-devel (2018-12-23) r75892 Ubuntu/Linux
 
 ## R CMD check results
 There were no ERRORs, WARNINGs or NOTEs. 
