@@ -1,0 +1,17 @@
+citHeader("If you would like to cite readbulk in your published research, you can cite it as follows:")
+
+bibentry(
+  bibtype = "Manual",
+  title = "Readbulk: {A}n {R} package for reading and combining multiple data files",
+	author  = c(
+    person(c("Pascal","J."), "Kieslich"),
+    person("Felix", "Henninger")
+    ),
+  year = "2016",
+  doi = "10.5281/zenodo.596649",
+  textVersion  =
+  paste("Kieslich, P. J., & Henninger, F. (2016).",
+        "Mouse-tracking: A practical guide to implementation and analysis.",
+        "Readbulk: An R package for reading and combining multiple data files.",
+        "https://doi.org/10.5281/zenodo.596649")
+)
