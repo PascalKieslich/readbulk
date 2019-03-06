@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 
 [![cran version](http://www.r-pkg.org/badges/version/readbulk)](https://CRAN.R-project.org/package=readbulk)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.596649.svg)](https://doi.org/10.5281/zenodo.596649)
-
+[![downloads](https://cranlogs.r-pkg.org/badges/grand-total/readbulk?color=yellow)](https://CRAN.R-project.org/package=readbulk)
 
 **readbulk** is an `R` package that facilitates loading multiple data files with a similar structure and combining them into a single `data.frame`, using the `read_bulk` function. It wraps most common `R` functions for reading data, retaining the flexiblity of the available tools.
 
