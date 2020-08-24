@@ -17,7 +17,7 @@ tools.
 For (experimental) psychologists, the package provides the
 `read_opensesame` function which wraps the above, providing the
 appropriate defaults for loading the many files created by
-[OpenSesame](http://osdoc.cogsci.nl/).
+[OpenSesame](https://osdoc.cogsci.nl/).
 
 ## General Information
 
@@ -26,9 +26,9 @@ contributions by Felix Henninger. It is published under the GNU General
 Public License (version 3).
 
 An overview of the functions in this package can be found
-[online](http://pascalkieslich.github.io/readbulk/reference). Please see
-[news](http://pascalkieslich.github.io/readbulk/news) for a summary of
-changes in the package.
+[online](http://pascalkieslich.github.io/readbulk/reference/). Please
+see [news](http://pascalkieslich.github.io/readbulk/news/) for a summary
+of changes in the package.
 
 ## Installation
 
