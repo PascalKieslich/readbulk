@@ -1,17 +1,17 @@
 Package: readbulk
 Type: Package
-Version: 1.1.2
-Date: 2019-02-02
+Version: 1.1.3
+Date: 2020-08-24
 Title: Read and Combine Multiple Data Files
 Description: Combine multiple data files from a common directory.
     The data files will be read into R and bound together, creating a
     single large data.frame. A general function is provided along with
     a specific function for data that was collected using the open-source
     experiment builder 'OpenSesame' <http://osdoc.cogsci.nl/>.
-Maintainer: Pascal J. Kieslich <kieslich@psychologie.uni-mannheim.de>
+Maintainer: Pascal J. Kieslich <pascal.kieslich@gmail.com>
 Authors@R: c(
     person(c("Pascal","J."), "Kieslich", role= c("aut", "cre"),
-            email= "kieslich@psychologie.uni-mannheim.de",
+            email= "pascal.kieslich@gmail.com",
             comment = c(ORCID = "0000-0002-0853-9364")),
     person("Felix", "Henninger", role = "aut",
         email= "mailbox@felixhenninger.com",
@@ -28,4 +28,4 @@ Imports:
     jsonlite
 Encoding: UTF-8
 LazyData: TRUE
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
