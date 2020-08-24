@@ -1,3 +1,6 @@
+# readbulk 1.1.3
+* Updated package description and documentation
+
 # readbulk 1.1.2
 * Improved speed of `read_bulk` and `read_opensesame` by binding data together only once (for every subdirectory)
 
