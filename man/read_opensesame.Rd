@@ -4,8 +4,13 @@
 \alias{read_opensesame}
 \title{Read and combine raw OpenSesame data}
 \usage{
-read_opensesame(directory = ".", subdirectories = FALSE,
-  extension = NULL, data = NULL, verbose = TRUE)
+read_opensesame(
+  directory = ".",
+  subdirectories = FALSE,
+  extension = NULL,
+  data = NULL,
+  verbose = TRUE
+)
 }
 \arguments{
 \item{directory}{a character string. Name of the folder where the raw data

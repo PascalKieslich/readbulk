@@ -4,8 +4,15 @@
 \alias{read_bulk}
 \title{Read and combine multiple data files}
 \usage{
-read_bulk(directory = ".", subdirectories = FALSE, extension = NULL,
-  data = NULL, verbose = TRUE, fun = utils::read.csv, ...)
+read_bulk(
+  directory = ".",
+  subdirectories = FALSE,
+  extension = NULL,
+  data = NULL,
+  verbose = TRUE,
+  fun = utils::read.csv,
+  ...
+)
 }
 \arguments{
 \item{directory}{a character string. Name of the folder where the raw data

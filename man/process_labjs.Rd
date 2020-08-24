@@ -4,8 +4,14 @@
 \alias{process_labjs}
 \title{Process lab.js data stored in survey software}
 \usage{
-process_labjs(data, labjs_column, keep = NULL, remove_no_json = FALSE,
-  verbose = FALSE, ...)
+process_labjs(
+  data,
+  labjs_column,
+  keep = NULL,
+  remove_no_json = FALSE,
+  verbose = FALSE,
+  ...
+)
 }
 \arguments{
 \item{data}{a data.frame.}
