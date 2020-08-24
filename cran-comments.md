@@ -1,9 +1,9 @@
 ## Test environments
-* R 3.5.2 (stable) Windows 7
-* R-devel (2018-12-23) r75892 Ubuntu/Linux
+* R 4.0.2 (stable) Windows 10
+* R devel (2020-08-23 r79065) Fedora Linux, clang, gfortran
 
 ## R CMD check results
-There were no ERRORs, WARNINGs or NOTEs. 
+There were no ERRORs or WARNINGs. There was 1 NOTE due to an update of the email address of the package maintainer.
 
 ## Downstream dependencies
 I have also run R CMD check on downstream dependencies (1 suggest).
