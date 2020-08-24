@@ -7,7 +7,7 @@ Description: Combine multiple data files from a common directory.
     The data files will be read into R and bound together, creating a
     single large data.frame. A general function is provided along with
     a specific function for data that was collected using the open-source
-    experiment builder 'OpenSesame' <http://osdoc.cogsci.nl/>.
+    experiment builder 'OpenSesame' <https://osdoc.cogsci.nl/>.
 Maintainer: Pascal J. Kieslich <pascal.kieslich@gmail.com>
 Authors@R: c(
     person(c("Pascal","J."), "Kieslich", role= c("aut", "cre"),
