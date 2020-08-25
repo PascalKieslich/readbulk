@@ -52,5 +52,5 @@ dataset <- process_labjs(data=raw_data,
 \author{
 Felix Henninger (\email{mailbox@felixhenninger.com})
 
-Pascal J. Kieslich (\email{kieslich@psychologie.uni-mannheim.de})
+Pascal J. Kieslich (\email{pascal.kieslich@gmail.com})
 }
