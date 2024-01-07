@@ -84,7 +84,7 @@ read_bulk <- function(directory=".",
 
 
   # Set subdirectory variables according to the selected option
-  if (class(subdirectories) == "logical") {
+  if (is.logical(subdirectories)) {
     check_subdirectories <- subdirectories
     if (check_subdirectories){
       subdirectories <- dir(directory)
@@ -92,7 +92,7 @@ read_bulk <- function(directory=".",
       subdirectories <- c("")
     }
 
-  } else if (class(subdirectories) == "character") {
+  } else if (is.character(subdirectories)) {
     check_subdirectories <- TRUE
 
   } else {
