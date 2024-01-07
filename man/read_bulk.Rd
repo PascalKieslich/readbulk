@@ -7,6 +7,8 @@
 read_bulk(
   directory = ".",
   subdirectories = FALSE,
+  name_contains = NULL,
+  name_filter = NULL,
   extension = NULL,
   data = NULL,
   verbose = TRUE,
@@ -25,6 +27,12 @@ subdirectories. If \code{FALSE} (the default), it is assumed that all raw
 data files are directly included in the directory. If \code{TRUE}, it is
 assumed that the raw data files are stored in folders within the directory.
 Alternatively, a vector of folder names that contain the raw data.}
+
+\item{name_contains}{an optional character string. If specified, only files
+whose name contains this string will be merged.}
+
+\item{name_filter}{an optional regular expression. If specified, only files
+whose name matches this regular expression will be merged.}
 
 \item{extension}{an optional character string. If specified, only files
 ending with the specified extension will be merged.}
