@@ -1,3 +1,7 @@
+# readbulk 1.1.4
+* `read_bulk`: Introduced `name_contains` argument, an optional character string. If specified, only files whose name contains this string will be merged.
+* `read_bulk`: Introduced `name_filter` argument, an optional regular expression. If specified, only files whose name matches this regular expression will be merged.
+
 # readbulk 1.1.3
 * Updated package description and documentation
 
