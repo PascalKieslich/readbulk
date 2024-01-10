@@ -23,6 +23,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -35,18 +37,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">readbulk</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">1.1.3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.4</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="reference/index.html">Reference</a>
 </li>
@@ -56,8 +52,8 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/pascalkieslich/readbulk/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/pascalkieslich/readbulk/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -73,82 +69,79 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="readbulk" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#readbulk" class="anchor"></a>readbulk</h1></div>
-
+<div class="section level1">
+<div class="page-header"><h1 id="readbulk">readbulk<a class="anchor" aria-label="anchor" href="#readbulk"></a>
+</h1></div>
+<p><a href="https://CRAN.R-project.org/package=readbulk" class="external-link"><img src="http://www.r-pkg.org/badges/version/readbulk" alt="cran version"></a> <a href="https://doi.org/10.5281/zenodo.596649" class="external-link"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.596649.svg" alt="DOI"></a> <a href="https://CRAN.R-project.org/package=readbulk" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/grand-total/readbulk?color=yellow" alt="downloads"></a></p>
 <p><strong>readbulk</strong> is an <code>R</code> package that facilitates loading multiple data files with a similar structure and combining them into a single <code>data.frame</code>, using the <code>read_bulk</code> function. It wraps most common <code>R</code> functions for reading data, retaining the flexiblity of the available tools.</p>
-<p>For (experimental) psychologists, the package provides the <code>read_opensesame</code> function which wraps the above, providing the appropriate defaults for loading the many files created by <a href="https://osdoc.cogsci.nl/">OpenSesame</a>.</p>
-<div id="general-information" class="section level2">
-<h2 class="hasAnchor">
-<a href="#general-information" class="anchor"></a>General Information</h2>
+<p>For (experimental) psychologists, the package provides the <code>read_opensesame</code> function which wraps the above, providing the appropriate defaults for loading the many files created by <a href="https://osdoc.cogsci.nl/" class="external-link">OpenSesame</a>.</p>
+<div class="section level2">
+<h2 id="general-information">General Information<a class="anchor" aria-label="anchor" href="#general-information"></a>
+</h2>
 <p>The <code>readbulk</code> package was developed by Pascal Kieslich, with contributions by Felix Henninger. It is published under the GNU General Public License (version 3).</p>
-<p>An overview of the functions in this package can be found <a href="http://pascalkieslich.github.io/readbulk/reference/">online</a>. Please see <a href="http://pascalkieslich.github.io/readbulk/news/">news</a> for a summary of changes in the package.</p>
+<p>An overview of the functions in this package can be found <a href="http://pascalkieslich.github.io/readbulk/reference/" class="external-link">online</a>. Please see <a href="http://pascalkieslich.github.io/readbulk/news/" class="external-link">news</a> for a summary of changes in the package.</p>
 </div>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
-<p>The current stable version is available on CRAN and can be installed via <code><a href="https://rdrr.io/r/utils/install.packages.html">install.packages("readbulk")</a></code>.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>The current stable version is available on CRAN and can be installed via <code>install.packages("readbulk")</code>.</p>
 </div>
-<div id="citation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#citation" class="anchor"></a>Citation</h2>
+<div class="section level2">
+<h2 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
+</h2>
 <p>If you would like to cite the <code>readbulk</code> package in your published research, you can cite is as follows:</p>
-<p>Kieslich, P. J., &amp; Henninger, F. (2016). Readbulk: An R package for reading and combining multiple data files. <a href="https://doi.org/10.5281/zenodo.596649" class="uri">https://doi.org/10.5281/zenodo.596649</a></p>
+<p>Kieslich, P. J., &amp; Henninger, F. (2016). Readbulk: An R package for reading and combining multiple data files. <a href="https://doi.org/10.5281/zenodo.596649" class="external-link uri">https://doi.org/10.5281/zenodo.596649</a></p>
 </div>
 </div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=readbulk">https://​cloud.r-project.org/​package=readbulk</a>
-</li>
-<li>Browse source code at <br><a href="https://github.com/pascalkieslich/readbulk/">https://​github.com/​pascalkieslich/​readbulk/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/pascalkieslich/readbulk/issues">https://​github.com/​pascalkieslich/​readbulk/​issues</a>
-</li>
-</ul>
-</div>
-<div class="license">
-<h2>License</h2>
-<ul class="list-unstyled">
-<li><a href="https://www.r-project.org/Licenses/GPL-3">GPL-3</a></li>
-</ul>
-</div>
-<div class="citation">
-<h2>Citation</h2>
-<ul class="list-unstyled">
-<li><a href="authors.html">Citing readbulk</a></li>
-</ul>
-</div>
-<div class="developers">
-<h2>Developers</h2>
-<ul class="list-unstyled">
-<li>Pascal J. Kieslich <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-0853-9364" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Felix Henninger <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-7730-9511" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li><a href="https://cloud.r-project.org/package=readbulk" class="external-link">View on CRAN</a></li>
+<li><a href="https://github.com/pascalkieslich/readbulk/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/pascalkieslich/readbulk/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="license">
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://CRAN.R-project.org/package=readbulk"><img src="http://www.r-pkg.org/badges/version/readbulk" alt="cran version"></a></li>
-<li><a href="https://doi.org/10.5281/zenodo.596649"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.596649.svg" alt="DOI"></a></li>
-<li><a href="https://CRAN.R-project.org/package=readbulk"><img src="https://cranlogs.r-pkg.org/badges/grand-total/readbulk?color=yellow" alt="downloads"></a></li>
+<li><a href="https://www.r-project.org/Licenses/GPL-3" class="external-link">GPL-3</a></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing readbulk</a></li>
+</ul>
 </div>
+
+<div class="developers">
+<h2 data-toc-skip>Developers</h2>
+<ul class="list-unstyled">
+<li>Pascal J. Kieslich <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-0853-9364" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Felix Henninger <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-7730-9511" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+</ul>
+</div>
+
+
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Pascal J. Kieslich, Felix Henninger.</p>
+  <p></p>
+<p>Developed by Pascal J. Kieslich, Felix Henninger.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer>
@@ -156,6 +149,8 @@
 
   
 
+
+  
 
   </body>
 </html>
